@@ -13,9 +13,9 @@
 #define GPIO_CLR(X)          (*(gpio_base + gpio_clr_offset + (GPIO_SET_REG(X))) |= (1 << GPIO_SET_OFFSET(X)))
 
 
-const uint32_t gpio_fsel_offset = 0x0;
-const uint32_t gpio_set_offset  = 0x1C/4;
-const uint32_t gpio_clr_offset  = 0x28/4;
+const uint32_t gpio_fsel_offset = 0;
+const uint32_t gpio_set_offset  = 7; // 0x1C/4;
+const uint32_t gpio_clr_offset  = 10; // 0x28/4;
 
 
 volatile uint32_t* gpio_base;  
